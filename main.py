@@ -10,7 +10,6 @@ videos_path = os.path.join(current_path, "Resources", "Videos")
 def download_video(file_name, download_link):
     respuesta = requests.get(download_link)
     downloaded_file_path = os.path.join(videos_path, file_name + ".mp4")  # Use videos_path to store videos
-
     with open(downloaded_file_path, "wb") as archivo:
         archivo.write(respuesta.content)
 
