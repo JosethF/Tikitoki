@@ -27,4 +27,4 @@ def download_list_videos(file_name):
                 video_count += 1
 
 if __name__ == "__main__":
-    download_list_videos("Waterfall")
+    download_list_videos("Cities")
